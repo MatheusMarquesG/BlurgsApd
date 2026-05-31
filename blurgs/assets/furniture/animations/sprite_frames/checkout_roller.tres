@@ -1,0 +1,32 @@
+﻿[gd_resource type="SpriteFrames" load_steps=5 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/furniture/animations/service/anim_checkout_roller.png" id="spritesheet"]
+
+[sub_resource type="AtlasTexture" id="atlas_0"]
+atlas = ExtResource("spritesheet")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="atlas_1"]
+atlas = ExtResource("spritesheet")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="atlas_2"]
+atlas = ExtResource("spritesheet")
+region = Rect2(32, 0, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("atlas_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("atlas_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("atlas_2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
